@@ -13,8 +13,7 @@ elif marks >=60 and marks <=69:
 elif marks <=59:
     print("Congratulations its Grade F")
 
-'''
-'''
+
 import sys
 print ("Python version " + str(sys.version))
 print("Version info " )
@@ -193,7 +192,7 @@ if not(x > 0):
 else:
     print("Hello World")
 
-'''
+
 
 
 # defining a function
@@ -227,3 +226,198 @@ def fib(n):
     a, b = 0, 1
     while a < n:
         print(a, )
+        
+
+
+
+#import pandas
+#dataframe = pandas.read_csv('vms.csv')
+#print(dataframe)
+
+
+import numpy as np
+a = np.arange(6)
+a2 = a[np.newaxis, :]
+print(a2.shape)
+
+
+# define the state and behaviour of particular object
+class Product:
+    # data, state related to particular product
+    price: float
+    name: str
+    is_active: bool
+
+    # behaviour
+    def set_price(self, price):
+        # data validation
+        if price < 0:
+            self.price = 0
+        self.price = price
+
+    def get_price(self):
+        return self.price
+
+    # constructor: initial values for the object
+    def __init__(self, name, price, is_active):
+        self.name = name
+        self.price = price
+        self.is_active = is_active
+
+
+tv = Product("TV", 500, True)
+#fridge = Product()
+
+
+
+
+# create an object using the class
+product = Product()
+product.name = 'TV'
+
+product2 = Product()
+product2.name = 'Fridge'
+print(product2.name)
+
+
+class Developer:
+    def code(self):
+        print("My first class object exampled")
+
+
+object = Developer()
+object.code()
+
+
+
+
+class Person:
+    name: str
+    email: str
+    id: int
+
+
+class Developer:
+
+    name: str
+    sware: str
+    balance: int
+
+    def info(self):
+        print("Information ")
+
+    def __init__(self, name, sware, balance):
+        self.name = name
+        self.sware = sware
+        self.balance = balance
+
+
+object = Developer("Jeyaprakash", "python", 100000)
+object1 = Developer("vishnupriya", "sql", 1000000)
+print(object.name + " " + object.sware)
+
+
+
+
+# Parent Class
+class Animal:
+    weight: int
+    name: str
+
+    def speak(self):
+        return "Strange nosie"
+
+
+# Dog extends the class animal
+class Dog(Animal):
+    breed: str
+
+    def play(self):
+        print("Playing")
+
+    # Overwriting method
+    def speak(self):
+        return "Bark"
+
+
+class Cat(Animal):
+    def speak(self):
+        return "Meow"
+
+
+list = [Dog(), Cat(), Dog(), Animal()]
+for animal in list:
+    print(animal.speak())
+    
+
+from pydantic import BaseModel
+
+
+class Person(BaseModel):
+    id: int
+    name: str
+
+
+customer = {
+    "id": 1,
+    "name": "JP"
+}
+
+
+# unpacking
+p = Person(**customer)
+print(str(p.id) + " : " + p.name)
+
+
+
+class Person:
+    name: str
+    email: str
+    id: int
+
+
+class Developer:
+
+    name: str
+    sware: str
+    balance: int
+
+    def info(self):
+        print("Information ")
+
+    def __init__(self, name, sware, balance):
+        self.name = name
+        self.sware = sware
+        self.balance = balance
+
+
+object = Developer("Jeyaprakash", "python", 100000)
+object1 = Developer("vishnupriya", "sql", 1000000)
+print(object.name + " " + object.sware)
+
+
+
+file = open("users.txt", "r")
+for line in file:
+    print(line)
+
+file.close()
+'''
+
+
+with open("numbers.txt", "r") as file:
+    for line in file:
+        print(line)
+
+print(file.closed)
+
+total = 0
+with open("numbers.txt", "r") as file:
+#for line in file:
+#    for char in line:
+#        if char.isdigit():
+#            total = total + int(char)
+    total = [(total + int(char)) for line in file for char in line if char.isdigit()]
+
+print(total)
+
