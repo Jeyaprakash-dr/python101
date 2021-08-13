@@ -402,7 +402,7 @@ for line in file:
     print(line)
 
 file.close()
-'''
+
 
 
 with open("numbers.txt", "r") as file:
@@ -421,3 +421,167 @@ with open("numbers.txt", "r") as file:
 
 print(total)
 
+import os
+
+arch = os.uname()[0]
+print(arch)
+os.
+
+with open("users.txt", "a") as file:
+    file.write("\nDan Patrick Walsh")
+
+
+with open("users.txt", "r") as file:
+    for line in file:
+        print(line)
+
+'''
+
+import csv
+
+
+class User:
+    name: str
+    l_name: str
+    email: str
+
+    def __init__(self, name, l_name, email):
+        self.name = name
+        self.l_name = l_name
+        self.email = email
+
+
+
+with open("users.csv") as file:
+    reader = csv.reader(file, delimiter=",")
+    user_list = []
+    for line in reader:
+        user = User(line[0], line[1], line[2])
+        user_list.append(user)
+
+    print(user_list)
+
+
+
+
+'''
+file = open("users.txt", "r")
+for line in file:
+    print(line)
+
+
+file.close()
+
+with open("users.txt", "r") as file:
+    for line in file:
+        print(line)
+
+print(file.closed)
+
+
+total = 0
+with open("numbers.txt", "r") as file:
+    for line in file:
+        for char in line:
+            if char.isdigit():
+                total = total + int(char)
+    
+print(total)
+
+
+
+# write to the file
+with open("users.txt", "a") as file:
+    file.write("\nSandy Brookes")
+
+
+with open("users.txt", "r") as file:
+    for line in file:
+        print(line)
+
+
+import csv
+
+
+class User:
+    name: str
+    email: str
+
+
+    def __init__(self, name, email):
+        self.name = name
+        self.email = email
+
+with open("users.csv") as file:
+    reader = csv.reader(file, delimiter=",")
+    user_list = []
+    row_number = 1
+
+    for line in reader:
+        if row_number != 1:
+            user = User(line[1] + " " + line[0], line[2])
+            user_list.append(user)
+            row_number += 1
+        else:
+            row_number += 1
+
+print(user_list)
+for item in user_list:
+    print(item.name + "!")
+
+
+def read_file(filename):
+    try:
+        with open(filename) as file:
+            for line in file:
+                print(line)
+
+    except:
+        print("Something went wrong")
+
+
+read_file("users.csv")
+
+
+
+import re
+
+p = re.compile(r'\W+')
+print(p.split('THis is a test, shor and sweet, of split().'))
+
+
+p = re.compile('(blue|white|red)')
+print(p.sub('colour', 'blue socks and red shoes'))
+
+
+
+def check_status():
+    value = 0
+    if(value == 0):
+        value += 1
+        return True
+    else:
+        return False
+
+while check_status():
+    print("Python")
+
+# Very good example of read and write file as function
+
+
+def read_file(file_name):
+    with open(file_name) as my_file:
+        for line in my_file.readlines():
+            print(line)
+
+
+def write_file(file_name, your_text):
+    with open(file_name, 'a') as file:
+        file.write(your_text)
+
+
+file_path = 'hello.txt'
+
+write_file(file_path, 'I wrote to a file again!\n')
+
+'''
