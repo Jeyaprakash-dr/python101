@@ -21,4 +21,4 @@ for col in dept:
     total = locale.currency(amount.sum(), grouping=True)
 
     print("%s   " % col, total)
-
+    

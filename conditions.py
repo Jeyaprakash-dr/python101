@@ -435,7 +435,7 @@ with open("users.txt", "r") as file:
     for line in file:
         print(line)
 
-'''
+
 
 import csv
 
@@ -459,12 +459,13 @@ with open("users.csv") as file:
         user = User(line[0], line[1], line[2])
         user_list.append(user)
 
-    print(user_list)
+
+print(user_list) 
 
 
 
 
-'''
+
 file = open("users.txt", "r")
 for line in file:
     print(line)
@@ -528,6 +529,7 @@ with open("users.csv") as file:
 print(user_list)
 for item in user_list:
     print(item.name + "!")
+'''
 
 
 def read_file(filename):
@@ -536,52 +538,17 @@ def read_file(filename):
             for line in file:
                 print(line)
 
+    except FileNotFoundError: 
+        print("File does not exist.")
+
     except:
-        print("Something went wrong")
+        print("Something went wrokng")
 
 
-read_file("users.csv")
+read_file("users.csvs")
 
-
-
-import re
-
-p = re.compile(r'\W+')
-print(p.split('THis is a test, shor and sweet, of split().'))
-
-
-p = re.compile('(blue|white|red)')
-print(p.sub('colour', 'blue socks and red shoes'))
+        
+        
 
 
 
-def check_status():
-    value = 0
-    if(value == 0):
-        value += 1
-        return True
-    else:
-        return False
-
-while check_status():
-    print("Python")
-
-# Very good example of read and write file as function
-
-
-def read_file(file_name):
-    with open(file_name) as my_file:
-        for line in my_file.readlines():
-            print(line)
-
-
-def write_file(file_name, your_text):
-    with open(file_name, 'a') as file:
-        file.write(your_text)
-
-
-file_path = 'hello.txt'
-
-write_file(file_path, 'I wrote to a file again!\n')
-
-'''
