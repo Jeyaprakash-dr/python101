@@ -3,5 +3,8 @@
 
 def main():
     print('Hello, World.')
+    x = set('hello')
+    y = set('world')
+    print(x - y)
 
 if __name__ == '__main__': main()
