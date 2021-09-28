@@ -1,0 +1,13 @@
+{
+  "id": 1,
+  "name": "Dan Pickles",
+  "title": "Technical Architect",
+  "salary": 120000,
+  "active": true,
+  "skills": ["Java", "Python", "SQL"],
+  "highest_degree": {
+    "college": "Harvard",
+    "major": "Computer Science",
+    "gpa": 4
+  }
+}

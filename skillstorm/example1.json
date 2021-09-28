@@ -1,0 +1,237 @@
+//[
+//  {
+//    'word': 'miraculous',
+//    'phonetic': 'mɪˈrakjʊləs',
+//    'phonetics': [
+//      {
+//        'text': 'mɪˈrakjʊləs',
+//        'audio': '//ssl.gstatic.com/dictionary/static/sounds/20200429/miraculous--_gb_1.8.mp3'
+//      }
+//    ],
+//    'origin': 'late Middle English: from French miraculeux or medieval Latin miraculosus, from Latin miraculum (see miracle).',
+//    'meanings': [
+//      {
+//        'partOfSpeech': 'adjective',
+//        'definitions': [
+//          {
+//            'definition': 'of the nature of a miracle or having the power to work miracles.',
+//            'example': 'a miraculous cure',
+//            'synonyms': [
+//              'supernatural',
+//              'preternatural',
+//              'superhuman',
+//              'inexplicable',
+//              'unaccountable',
+//              'fantastic',
+//              'magical',
+//              'phenomenal',
+//              'prodigious',
+//              'thaumaturgic'
+//            ],
+//            'antonyms': []
+//          }
+//        ]
+//      }
+//    ]
+//  }
+//]
+
+//[
+//  {
+//    'word': 'believe',
+//    'phonetic': 'bɪˈliːv',
+//    'phonetics': [
+//      {
+//        'text': 'bɪˈliːv',
+//        'audio': '//ssl.gstatic.com/dictionary/static/sounds/20200429/believe--_gb_1.mp3'
+//      }
+//    ],
+//    'origin': 'late Old English belȳfan, belēfan, alteration of gelēfan, of Germanic origin; related to Dutch geloven and German glauben, also to lief.',
+//    'meanings': [
+//      {
+//        'partOfSpeech': 'verb',
+//        'definitions': [
+//          {
+//            'definition': 'accept that (something) is true, especially without proof.',
+//            'example': "the superintendent believed Lancaster's story",
+//            'synonyms': [
+//              'be convinced by',
+//              'trust',
+//              'have confidence in',
+//              'consider honest',
+//              'consider truthful',
+//              'regard as true',
+//              'accept as true',
+//              'accept',
+//              'give credence to',
+//              'credit',
+//              'give credit to',
+//              'put confidence in',
+//              'count on',
+//              'rely on',
+//              'depend on',
+//              'swallow',
+//              'swallow something hook',
+//              'line',
+//              'and sinker',
+//              'fall for',
+//              'go for',
+//              'buy',
+//              'take as gospel'
+//            ],
+//            'antonyms': [
+//              'disbelieve'
+//            ]
+//          },
+//          {
+//            'definition': 'hold (something) as an opinion; think.',
+//            'example': "I believe we've already met",
+//            'synonyms': [
+//              'think',
+//              'be of the opinion that',
+//              'think it likely that',
+//              'have an idea that',
+//              'imagine',
+//              'feel',
+//              'have a feeling',
+//              'hold',
+//              'maintain',
+//              'suspect',
+//              'suppose',
+//              'assume',
+//              'presume',
+//              'conjecture',
+//              'surmise',
+//              'postulate that',
+//              'theorize that',
+//              'conclude',
+//              'come to the conclusion that',
+//              'deduce',
+//              'understand',
+//              'be given to understand',
+//              'take it',
+//              'gather',
+//              'fancy',
+//              'guess',
+//              'dare say',
+//              'figure',
+//              'reckon',
+//              'ween'
+//            ],
+//            'antonyms': [
+//              'doubt'
+//            ]
+//          }
+//        ]
+//      }
+//    ]
+//  }
+//]
+
+{
+  "data": [
+    {
+      "attributes": {
+        "active_period": [
+          {
+            "end": "2021-11-01T02:30:00-04:00",
+            "start": "2021-08-29T04:30:00-04:00"
+          }
+        ],
+        "banner": null,
+        "cause": "UNKNOWN_CAUSE",
+        "created_at": "2021-08-25T21:40:52-04:00",
+        "description": null,
+        "effect": "SERVICE_CHANGE",
+        "header": "Effective August 29: Red Line frequency increases throughout the day on weekdays.",
+        "informed_entity": [
+          {
+            "activities": [
+              "BOARD",
+              "EXIT",
+              "RIDE"
+            ],
+            "route": "Red",
+            "route_type": 1
+          }
+        ],
+        "lifecycle": "ONGOING",
+        "service_effect": "Red Line notice",
+        "severity": 3,
+        "short_header": "Effective August 29: Red Line frequency increases throughout the day on weekdays.",
+        "timeframe": "through October 31",
+        "updated_at": "2021-08-25T21:40:52-04:00",
+        "url": null
+      },
+      "id": "402137",
+      "links": {
+        "self": "/alerts/402137"
+      },
+      "type": "alert"
+    }
+  ],
+  "jsonapi": {
+    "version": "1.0"
+  }
+}
+
+var = [
+  {
+    'word': 'disaster',
+    'phonetic': 'dɪˈzɑːstə',
+    'phonetics': [
+      {
+        'text': 'dɪˈzɑːstə',
+        'audio': '//ssl.gstatic.com/dictionary/static/sounds/20200429/disaster--_gb_1.mp3'
+      }
+    ],
+    'origin': 'mid 16th century: from Italian disastro ‘ill-starred event’, from dis- (expressing negation) + astro ‘star’ (from Latin ast
+    'meanings': [
+      {
+        'partOfSpeech': 'noun',
+        'definitions': [
+          {
+            'definition': 'a sudden accident or a natural catastrophe that causes great damage or loss of life.',
+            'example': '159 people died in the disaster',
+            'synonyms': [
+              'catastrophe',
+              'calamity',
+              'cataclysm',
+              'tragedy',
+              'act of God',
+              'holocaust',
+              'accident',
+              'mishap',
+              'misadventure',
+              'mischance',
+              'setback',
+              'reversal',
+              'reverse of fortune',
+              'contretemps',
+              'stroke of ill luck',
+              'problem',
+              'difficulty',
+              'heavy blow',
+              'shock',
+              'buffet',
+              'adversity',
+              'trouble',
+              'misfortune',
+              'ruin',
+              'ruination',
+              'tribulation',
+              'woe',
+              'distress',
+              'casualty',
+              'bale',
+              'mishanter'
+            ],
+            'antonyms': [
+              'blessing'
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
